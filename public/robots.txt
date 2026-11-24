@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /careers/
+Disallow: /dashboard
+Disallow: /onboarding
+Disallow: /settings
+Disallow: /api/
+
+Sitemap: /sitemap.xml

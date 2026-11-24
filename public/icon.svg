@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="112" fill="#050507"/>
+  <rect x="12" y="12" width="488" height="488" rx="102" stroke="url(#borderGrad)" stroke-width="4" stroke-opacity="0.4"/>
+  <path d="M132 348C132 256 206 256 256 256C306 256 380 256 380 164" stroke="url(#pathGrad)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M132 164L256 256L380 348" stroke="#38BDF8" stroke-opacity="0.38" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="132" cy="348" r="28" fill="#6366F1"/>
+  <circle cx="256" cy="256" r="34" fill="#8B5CF6"/>
+  <circle cx="256" cy="256" r="14" fill="#F8FAFC"/>
+  <circle cx="380" cy="164" r="28" fill="#38BDF8"/>
+  <circle cx="132" cy="164" r="18" fill="#101018" stroke="#8B5CF6" stroke-width="8"/>
+  <circle cx="380" cy="348" r="18" fill="#101018" stroke="#34D399" stroke-width="8"/>
+  <defs>
+    <linearGradient id="pathGrad" x1="132" y1="348" x2="380" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #FAFAFC;
+    --bg-secondary: #F4F4F8;
+    --bg-card: #FFFFFF;
+    --border-subtle: rgba(15, 23, 42, 0.08);
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+    --accent-primary: #7C3AED;
+    --accent-secondary: #4F46E5;
+    --accent-interactive: #0284C7;
+  }
+
+  .dark {
+    --bg-primary: #050507;
+    --bg-secondary: #0A0A10;
+    --bg-card: #101018;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --text-primary: #F8FAFC;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
+    --accent-primary: #8B5CF6;
+    --accent-secondary: #6366F1;
+    --accent-interactive: #38BDF8;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.glass-surface {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.dark .glass-surface {
+  background: rgba(16, 16, 24, 0.72);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
